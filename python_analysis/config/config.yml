@@ -1,0 +1,17 @@
+#data path to folder
+data_file_path: data_samples/json_files/may_sample
+file_type: '*.json'
+
+#language for experiments
+language: 'en'
+#twitter metadata location
+tweet: 
+  url_path: 
+    #number of tweets per URL
+    threshold: 0
+    
+    #path to expanded URL
+    entities: 'entities'
+    url: 'urls'
+    exp_url_id: 0
+    exp_url: 'expanded_url' 

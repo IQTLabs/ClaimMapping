@@ -1,0 +1,142 @@
+#data
+data:
+  data_file_path: 'data/testDates.csv'
+  data_type: 'read_csv'
+
+#plotly figures
+plotly_figures:
+  #configurations for the scatter geo plot
+  figures:
+    #Filled Area Chart - Plotly Express Figure
+    area:
+      rangeslider: True
+    scatter:
+      title: 'Political Affiliation Over Time by Narrative'
+      colors:
+        label: 'Center'
+        color: 'rgb(255,127,0)'
+        label2: 'not available'
+        color2: 'rgb(153,153,153)'
+        label3: 'Left'
+        color3: 'rgb(55,126,184)'
+        label4: 'Right'
+        color4: 'rgb(228,26,28)'
+    #Scatter Geo Plotly Express Figures
+    scatterGeo:
+      animation_frame: 'date'
+      #legend
+      color: 'narratives'
+      hover_name: 'narratives'
+      hover_data: 
+        long: False
+        lat: False
+        full_text: False
+        created_at: True
+        tweet_user: True
+        source_tweeter: True
+        source: False
+        source_bias: True
+      title: 'COVID-19 Narrative Mapping'
+
+#configurations for the dash app 
+dash_app:
+  external_stylesheets: 'https://codepen.io/chriddyp/pen/bWLwgP.css'
+
+  dash_text:
+    intro_P1: "IQT Labs created this narrative & claim-mapping tool to help track the spread of mis/dis-information about COVID-19 over time. We wanted to map tweets relating to specific claims or narratives in geographic and political space, as well as time. This enables us to visualize the lifecycle of a claim or narrative, including which ones become politicized over time. The current prototype displays 563 tweets from March, April, and May 2020, containing URL links about Cures, Prevention, or Origins. Future versions will integrate with our automated claim-matching API. Read our "
+    intro_P2: " to see how we made the dataset as well as how you can use this open source visualization with your own data!" 
+
+    #Left Side of Dash App
+    leftSide:
+      headingLeft: "Mapping Tweets by Topic/Narrative, Location, & Date"
+      tabLeft: 'All Topics'
+      #column name in dataframe
+      valueLeft: 'topics'
+      tabRight: 'Narratives by Topic'
+      valueRight: 'narratives'
+      valueDefault: 'topics'
+      tabRight_subtxt: "Select a topic to view specific narratives"
+
+    #Right side of Dash app
+    rightSide:
+      headingRight: "Metadata Analysis"
+      tab1: 'Topics Per Day'
+      valueTab1: 'tab-1'
+      tab2: 'Narratives Per Day'
+      valueTab2: 'tab-2'
+      tab3: 'Political Affiliation'
+      valueTab3: 'tab-3'
+      #Figures text on right side of dash app 
+      figures:
+        tab1:
+          area_title: "Number of Tweets per day by Claim"
+          area_legend: "topics"
+          area_subtxt: 'Select a range to narrow the view. Click on a narrative category to hide it.'
+        tab2:
+          area_title: "Number of Tweets per day by Narrative"
+          area_legend: "narratives"
+          area_subtxt: 'Select a range to narrow the view. Click on a narrative category to hide it.'
+        tab3:
+          area_legend: 'narratives'
+          area_subtxt1: "Political Affiliations were obtained from the "
+          area_subtxt2: "In addition, the political affiliations of some political figures were labeled with their current political party affiliation."
+          area_linkTxt: 'NELA-GT-2019 Dataset'
+          area_link: 'https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/O7FWPO'
+    #Tweet Metadata text
+    tweetMeta:
+      title: 'Tweet Metadata'
+      intro_P: 'If the text gets cut off, use the track pad to scroll right/left.'
+      full_text_id: 4
+      source_url_id: 11
+      bias_id: 12
+
+  #Styles for the dash app
+  styles:
+    font-family: 'tahoma'
+    overflowX: 'scroll'
+    font-size: '14px'
+    #Styles for the tabs on the dash app
+    tab:
+      height: '44px'
+      font-family: 'tahoma'
+      borderBottom: '1px solid #d6d6d6'
+      padding: '6px'
+      fontWeight: 'bold'
+      borderTop: '1px solid #d6d6d6'
+      backgroundColor: 'rgb(255,255,255)'
+      color: 'white'
+  #Need this to be true so that you won't get errors from having nested callbacks
+  callback_exceptions: True
+
+  #Title of dash app
+  title: 'COVID-19 Narrative & Claim-Mapping'
+
+  #the circle buttons below the Scatter Geo Plotly Express Figures
+  radio_items:
+
+    #Radio Item Buttons for the Twitter Metadata
+    twitter:
+      label1: 'Show Tweet Metadata'
+      value1: 'showMeta'
+      label2: 'Hide Tweet Metadata'
+      value2: 'hideMeta'
+      defaultValue: 'hideMeta'
+    #show it horizontally
+    display: 'inline-block'
+
+    #Radio Item buttons for switching the geo scope of the map for scatter geo plotly express figure
+    world:
+      label1: 'United States'
+      value1: 'usa'
+      label2: 'Europe'
+      value2: 'europe'
+      label3: 'Asia'
+      value3: 'asia'
+      label4: 'Africa'
+      value4: 'africa'
+      label5: 'South America'
+      value5: 'south america'
+      label6: 'World'
+      value6: 'world'
+      defaultValue: 'usa'
+
