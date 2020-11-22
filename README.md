@@ -10,7 +10,7 @@ A demo of the narrative and claim-mapping dash app core functionalities can be s
   <img src="https://github.com/katelyn98/Infodemic/blob/master/Claim_Mapping/results/DashAppDemo08-21.gif" /> 
 </p>
 
-All the code for the dash app can be in the [dash app](https://github.com/IQTLabs/Infodemic/tree/master/Claim_Mapping/dash_app) folder of this repo.
+All the code for the dash app can be found in the [dash app](https://github.com/IQTLabs/Infodemic/tree/master/Claim_Mapping/dash_app) folder of this repo.
 
 ## Folder Structure
 The structure of the Claim_Mapping folder and the specifics of each folder are listed below. For more in depth detail on each folder, navigate to that folder to view its specific README.md.
