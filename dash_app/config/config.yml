@@ -11,7 +11,7 @@ plotly_figures:
     area:
       rangeslider: True
     scatter:
-      title: 'Political Affiliation Over Time by Narrative'
+      title: 'Left/Right Bias Over Time by Narrative'
       colors:
         label: 'Center'
         color: 'rgb(255,127,0)'
@@ -43,7 +43,7 @@ dash_app:
   external_stylesheets: 'https://codepen.io/chriddyp/pen/bWLwgP.css'
 
   dash_text:
-    intro_P1: "IQT Labs created this narrative & claim-mapping tool to help track the spread of mis/dis-information about COVID-19 over time. We wanted to map tweets relating to specific claims or narratives in geographic and political space, as well as time. This enables us to visualize the lifecycle of a claim or narrative, including which ones become politicized over time. The current prototype displays 563 tweets from March, April, and May 2020, containing URL links about Cures, Prevention, or Origins. Future versions will integrate with our automated claim-matching API. Read our "
+    intro_P1: "IQT Labs created this narrative & claim-mapping visualization tool (currently in prototype) to enable \"information epidemiology,\" using a data set of tweets with misleading claims about COVID-19. We wanted to map tweets relating to specific claims or narratives in geographic and \"left/right\" space, as well as time. This enables us to visualize the lifecycle of a claim or narrative: when and where did a narrative originate, how did it propagate, and is it still active? We were also interested in seeing which narratives or claims become politicized over time. The current prototype displays 563 tweets from March-May 2020, containing 59 unique URL links about Cures, Prevention, or Origins, many of which are misleading. Where available, we include metadata on source bias for each URL, with news source domain bias derived from the NELA-GT-2019 Dataset. Future versions will integrate with our automated claim-matching API, which identifies close semantic matches from Tweets to previously fact-checked claims. Read our "
     intro_P2: " to see how we made the dataset as well as how you can use this open source visualization with your own data!" 
 
     #Left Side of Dash App
@@ -64,7 +64,7 @@ dash_app:
       valueTab1: 'tab-1'
       tab2: 'Narratives Per Day'
       valueTab2: 'tab-2'
-      tab3: 'Political Affiliation'
+      tab3: 'Left/Right Bias'
       valueTab3: 'tab-3'
       #Figures text on right side of dash app 
       figures:
@@ -78,8 +78,8 @@ dash_app:
           area_subtxt: 'Select a range to narrow the view. Click on a narrative category to hide it.'
         tab3:
           area_legend: 'narratives'
-          area_subtxt1: "Political Affiliations were obtained from the "
-          area_subtxt2: "In addition, the political affiliations of some political figures were labeled with their current political party affiliation."
+          area_subtxt1: "Left/Right Biases were obtained from the "
+          area_subtxt2: "-"
           area_linkTxt: 'NELA-GT-2019 Dataset'
           area_link: 'https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/O7FWPO'
     #Tweet Metadata text
