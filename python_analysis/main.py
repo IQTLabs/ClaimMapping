@@ -23,10 +23,10 @@ if __name__ == "__main__":
 	
 	#filtering is not required for analyzing, but is recommended.
 	#filtering gets rid of tweets that do not have a place or URL and tweets that are not in English
-	# print("start filter")
-	# final_df = fdf.mainFilter(data_files, 3)
-	# print("completed filter")
+	print("start filter")
+	final_df = fdf.mainFilter(data_files, 3)
+	print("completed filter")
 
-	# print("start analyzing")
-	# azft.mainFunc(final_df)
-	# print("completed analyzing")
+	print("start analyzing")
+	azft.mainFunc(final_df)
+	print("completed analyzing")
