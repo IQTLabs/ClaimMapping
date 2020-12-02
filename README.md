@@ -7,10 +7,10 @@ To run scripts and customize the scripts in this folder, please follow the steps
 
 A demo of the narrative and claim-mapping dash app core functionalities can be seen below. 
 <p align="center">
-  <img src="https://github.com/IQTLabs/ClaimMapping/tree/master/analysis/results/final-demo.gif" alt="final-demo" width="150" height="100"/> 
+  <img src="https://github.com/IQTLabs/ClaimMapping/blob/master/analysis/results/final-demo.gif"/> 
 </p>
 
-All the code for the dash app can be found in the [dash app](https://github.com/IQTLabs/ClaimMapping/tree/master/dash_app) folder of this repo.
+All the code for the dash app can be found in the [dash app](https://github.com/IQTLabs/ClaimMapping/blob/master/dash_app) folder of this repo.
 
 ## Folder Structure
 The structure of the ClaimMapping directory and the specifics of each folder are listed below.
