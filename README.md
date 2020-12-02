@@ -1,19 +1,20 @@
 # Claim Mapping Visualization & Analysis
 All examples, documentation, and scripts related to claim mapping can be found in this folder. 
 To run scripts and customize the scripts in this folder, please follow the steps below:
-1) Clone or download the Infodemic Repo to your machine: ```git clone https://github.com/IQTLabs/Infodemic```
-2) Navigate to the Claim_Mapping folder via terminal: ```cd Infodemic/Claim_Mapping```
+1) Clone or download the ClaimMapping repository to your local machine: ```git clone https://github.com/IQTLabs/ClaimMapping```
+2) Navigate to the ClaimMapping folder via terminal: ```cd ClaimMapping```
 3) Execute this command in terminal: ```pip3 install -r req.txt```
 
 A demo of the narrative and claim-mapping dash app core functionalities can be seen below. 
 <p align="center">
-  <img src="https://github.com/katelyn98/Infodemic/blob/master/Claim_Mapping/analysis/results/DashAppDemo08-21.gif" /> 
+  <img src="https://github.com/IQTLabs/ClaimMapping/tree/master/analysis/results/DashAppDemo08-21.gif" /> 
 </p>
 
-All the code for the dash app can be found in the [dash app](https://github.com/IQTLabs/Infodemic/tree/master/Claim_Mapping/dash_app) folder of this repo.
+All the code for the dash app can be found in the [dash app](https://github.com/IQTLabs/ClaimMapping/tree/master/dash_app) folder of this repo.
 
 ## Folder Structure
-The structure of the Claim_Mapping folder and the specifics of each folder are listed below. For more in depth detail on each folder, navigate to that folder to view its specific README.md.
+The structure of the ClaimMapping directory and the specifics of each folder are listed below.
+For more in depth detail on each folder, navigate to that folder to view its specific README.md.
 ```bash 
 ├── README.md
 ├── dash_app
