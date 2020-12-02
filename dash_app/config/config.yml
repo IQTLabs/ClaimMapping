@@ -1,6 +1,6 @@
 #data
 data:
-  data_file_path: 'data/testDates.csv'
+  data_file_path: 'data/only_narrative2.csv'
   data_type: 'read_csv'
 
 #plotly figures
@@ -78,8 +78,7 @@ dash_app:
           area_subtxt: 'Select a range to narrow the view. Click on a narrative category to hide it.'
         tab3:
           area_legend: 'narratives'
-          area_subtxt1: "Left/Right Biases were obtained from the "
-          area_subtxt2: "-"
+          area_subtxt: "Left/Right Biases were obtained from the "
           area_linkTxt: 'NELA-GT-2019 Dataset'
           area_link: 'https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/O7FWPO'
     #Tweet Metadata text
