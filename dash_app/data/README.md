@@ -1,5 +1,9 @@
 # Data used for Dash App
-You can download the _example_data.csv_ file and use this to merge with your own data. This file contains two rows of data - the first row is a filled in tweet example and the second row is a filler row that is used for plotly figures animations. The dash app is currently running on _testDates.csv_ which includes 563 tweets from March, April and May 2020 and 450 filler rows. You can find a data dictionary and data format guidelines below. You can process your data through the [filter_data python analysis script](https://github.com/IQTLabs/Infodemic/blob/4b8f67c5b33566316b2d1b70002087e0b471cb01/Claim_Mapping/python_analysis/func/filter_data.py) which takes in a folder of json files full of Twitter API data. 
+You can download the _example_data.csv_ file and use this to merge with your own data.
+This file contains two rows of data - the first row is a filled in tweet example and the second row is a filler row that is used for plotly figures animations.
+The dash app is currently running on _testDates.csv_ which includes 563 tweets from March, April and May 2020 and 450 filler rows.
+You can find a data dictionary and data format guidelines below.
+You can process your data through the [filter_data python analysis script](https://github.com/IQTLabs/Infodemic/blob/4b8f67c5b33566316b2d1b70002087e0b471cb01/Claim_Mapping/python_analysis/func/filter_data.py) which takes in a folder of json files full of Twitter API data. 
 
 ## Data Dictionary
 | column name | type | definition |
