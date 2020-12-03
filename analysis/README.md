@@ -1,8 +1,6 @@
 # Analysis Introduction
 Several analyses have been explored and prototyped using hydrated [twitter data](https://github.com/echen102/COVID-19-TweetIDs).
-Aside from the python scripts that you will find in this folder, these analyses are also in jupyter notebook format in the 
-
-[jupyter notebooks folder](https://github.com/IQTLabs/ClaimMapping/tree/master/jupyter_notebooks).
+Aside from the python scripts that you will find in this folder, these analyses are also in jupyter notebook format in the [jupyter notebooks folder](https://github.com/IQTLabs/ClaimMapping/tree/master/jupyter_notebooks).
 All results can be found in image format in the [results folder](https://github.com/IQTLabs/ClaimMapping/tree/master/analysis/results). 
 
 
