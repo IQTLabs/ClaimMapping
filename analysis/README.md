@@ -1,8 +1,10 @@
 # Analysis Introduction
 Several analyses have been explored and prototyped using hydrated [twitter data](https://github.com/echen102/COVID-19-TweetIDs).
 Aside from the python scripts that you will find in this folder, these analyses are also in jupyter notebook format in the 
-[jupyter notebooks folder](https://github.com/IQTLabs/ClaimMapping/blob/master/jupyter_notebooks).
-All results can be found in image format in the [results folder](https://github.com/IQTLabs/ClaimMapping/blob/master/jupyter_notebooks). 
+
+[jupyter notebooks folder](https://github.com/IQTLabs/ClaimMapping/tree/master/jupyter_notebooks).
+All results can be found in image format in the [results folder](https://github.com/IQTLabs/ClaimMapping/tree/master/analysis/results). 
+
 
 ### Analysis Functionalities
 There are several func scripts in this folder. Each func script has a doc string explaining what it does. You can customize the func scripts by modifying the config.yml file in this folder. 
