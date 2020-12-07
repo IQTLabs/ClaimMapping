@@ -8,7 +8,7 @@ To run scripts and customize the scripts in this folder, please follow the steps
 A demo of the narrative and claim-mapping dash app core functionalities can be seen below. 
 <p align="center">
 
-  <img src="https://github.com/IQTLabs/ClaimMapping/blob/master/analysis/results/final-demo.gif"/> 
+  <img src="https://github.com/IQTLabs/ClaimMapping/blob/master/preprocessing/results/final-demo.gif"/> 
 
 </p>
 
@@ -20,21 +20,22 @@ For more in depth detail on each folder, navigate to that folder to view its spe
 ```bash 
 ├── README.md
 ├── dash_app
-├── jupyter_notebooks
-├── analysis
+├── docs
+    ├── dev
+├── preprocessing
     ├── results
 ├── req.txt
 └── tests
 ``` 
 The **dash_app** folder is home to all scripts for the Claim Mapping Dash App. This folder is self contained and can be run on its own.
-The **jupyter_noteooks** folder has several notebooks that provide examples of prototypes. 
+The **docs/dev** folder has several notebooks that provide examples of prototypes. 
 It also breaks down steps used to create the hand-curated labeled dataset of tweets for prototyping a claim mapping visualization.
-The **analysis** folder is composed of code from the **jupyter_notebooks** folder.
-The code in **analysis** converted the code from the jupyter notebooks into scripts to be used on data via the terminal instead of via Jupyter. 
+The **preprocessing** folder is composed of code from the **docs/dev** folder.
+The code in **preprocessing** converted the code from the jupyter notebooks into scripts to be used on data via the terminal instead of via Jupyter. 
 The *README.md* in this directory provides an in depth discussion of analyses explored and prototyped throughout the process of developing the claim mapping visualization. 
 This *README.md* is updated on a biweekly basis. 
-The **analysis/results** directory has several images from prototyping and performing experiments throughout the development of the Claim Mapping visualization.
-In some cases the Jupyter Notebook file may not show the resulting figure - those images can be found in **analysis/results**.
+The **preprocessing/results** directory has several images from prototyping and performing experiments throughout the development of the Claim Mapping visualization.
+In some cases the Jupyter Notebook file may not show the resulting figure - those images can be found in **preprocessing/results**.
 This generally only happens for the plotly figures.
 Any side experiments with Dash and Plotly can be found in the **tests** folder - currently has one test on the Dash slider functionality to prepare for cross-filtering.
 
