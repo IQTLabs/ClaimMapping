@@ -80,7 +80,7 @@ def hasURL(tweet):
     Returns:
         boolean: has URL - true; no URL; false
     '''
-    if len(tweet['entities']['urls']) == 0:
+    if len(tweet['URL_link']) == 0:
         return False
     else: 
         return True
