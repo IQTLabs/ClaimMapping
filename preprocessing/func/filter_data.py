@@ -119,8 +119,8 @@ def modifyColumns(df):
     #Create a quick an easy URL Link column to view the link that is being referenced.
     df.insert(3, 'url_link', '')
     for i in range(len(df)):
-        if len(df.loc[i]['entities']['urls']) > 0:
-            urlstr = df.loc[i]['entities']['urls'][0]['expanded_url']
+        if len(df.loc[i]['URL_link']) > 0:
+            urlstr = df.loc[i]['URL_link'][0]
             df.at[i, 'URL_link'] = urlstr
     #create a quick and easy column to view the tweet on twitter
     df.insert(4, 'tweet_on_twitter','')
