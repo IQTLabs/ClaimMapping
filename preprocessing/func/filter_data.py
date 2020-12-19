@@ -117,10 +117,10 @@ def modifyColumns(df):
         df: modified pandas dataframe with a new column called 'URL_link'
     '''
     #Create a quick an easy URL Link column to view the link that is being referenced.
-    df.insert(3, 'url_link', '')
+    df.insert(3, 'URL_link', '')
     for i in range(len(df)):
-        if len(df.loc[i]['URL_link']) > 0:
-            urlstr = df.loc[i]['URL_link'][0]
+        if len(df.loc[i]['entities']['urls']) > 0:
+            urlstr = df.loc[i]['entities']['urls'][0]
             df.at[i, 'URL_link'] = urlstr
     #create a quick and easy column to view the tweet on twitter
     df.insert(4, 'tweet_on_twitter','')
@@ -218,8 +218,8 @@ def mainFilter(data_files=[], filtered_filename=''):
         print("in file", file)
         fext = os.path.splitext(file)[1]
         df = pd_reader(filename=file)
-        df = filterDF(df)
         df = modifyColumns(df)
+        df = filterDF(df)
         result_dfs.append(df)
         count += 1
         print("completed: {}".format(count/numb_files * 100))

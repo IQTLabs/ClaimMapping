@@ -1,6 +1,6 @@
 #data path to folder
 data_file_path: data
-file_type: 'csv' #'json'
+file_type: 'json'
 filtered_fname: 'filtered_example.csv'
 
 #language for experiments
